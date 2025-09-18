@@ -46,4 +46,10 @@ class CommandBase extends Command
 
         return $exporter->export($commands, $options);
     }
+
+    //abe++
+    public function getContainer(): ContainerInterface
+    {
+        return $this->container;
+    }
 }
